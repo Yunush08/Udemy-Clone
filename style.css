@@ -84,6 +84,16 @@ body {
     border-radius: 30px;
     padding: 10px;
     color: white;
+    cursor: pointer;
+    border: 1px solid #9837DB;
+}
+
+.categories p:hover {
+    background-color: transparent;
+    color: #9837DB;
+    border: 1px solid #9837DB;
+    transition: .5s;
+
 }
 
 .sale-image img {
@@ -102,6 +112,20 @@ body {
     top: 10%;
     left: 5%;
     padding: 2%;
+    animation-name: zoom;
+    animation-duration: 2s;
+}
+
+@keyframes zoom {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .recommended {
